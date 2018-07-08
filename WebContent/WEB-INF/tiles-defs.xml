@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition"
+        template="/Template.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/tiles/Header.jsp" />
+        <put-attribute name="menu" value="/tiles/Menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/tiles/Footer.jsp" />
+    </definition>
+ 
+    <definition name="Register" extends="base.definition">
+        <put-attribute name="title" value="Registration" />
+        <put-attribute name="body" value="/pages/Register.jsp" />
+    </definition>
+    
+    <definition name="Login" extends="base.definition">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="body" value="/pages/Login.jsp" />
+    </definition>
+    
+     <definition name="UserHome" extends="base.definition">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="body" value="/pages/UserHome.jsp" />
+    </definition>
+    
+     <definition name="UserFinal" extends="base.definition">
+        <put-attribute name="title" value="Confirmation" />
+        <put-attribute name="body" value="/pages/UserFinal.jsp" />
+    </definition>
+ 
+ 	 <definition name="FinHome" extends="base.definition">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="body" value="/pages/FinHome.jsp" />
+    </definition>
+    
+     <definition name="FinFinal" extends="base.definition">
+        <put-attribute name="title" value="Report" />
+        <put-attribute name="body" value="/pages/FinFinal.jsp" />
+    </definition>
+    
+     <definition name="AdminHome" extends="base.definition">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="body" value="/pages/AdminHome.jsp" />
+    </definition>
+    
+     <definition name="AdminFinal" extends="base.definition">
+        <put-attribute name="title" value="Confirmation" />
+        <put-attribute name="body" value="/pages/AdminFinal.jsp" />
+    </definition>
+     
+  
+</tiles-definitions>
